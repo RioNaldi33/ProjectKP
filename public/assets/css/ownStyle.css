@@ -1,0 +1,337 @@
+/**
+ * ============================================================
+ *  OWN STYLE - Custom CSS untuk Qur'an E-Mufassir
+ * ============================================================
+ *
+ *  Sections:
+ *  1. Tombol Transparan (Aksi Ayat)
+ *  2. Dropdown Surah & Qori
+ *  3. Chatbot Styles
+ *  4. Donasi Styles
+ *  5. Card Quran (Daftar Surah)
+ *  6. Responsive Styles
+ *  7. Misc (Scroll, Auth, Video Settings)
+ *
+ * ============================================================
+ */
+
+/* -----------------------------------------------
+   1. TOMBOL TRANSPARAN (Aksi Ayat: Copy, Share, dll.)
+   ----------------------------------------------- */
+.transparent-button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #544c4c;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.transparent-button:focus {
+    outline: none;
+}
+
+/* -----------------------------------------------
+   2. DROPDOWN SURAH & QORI
+   ----------------------------------------------- */
+#selection {
+    display: flex;
+    gap: 30px;
+}
+
+.pilihSurah,
+.pilihAyat {
+    border: none;
+    background-color: #8DC63F;
+    padding: 5px 14px;
+    color: white;
+    border-radius: 4px;
+}
+
+.pilihSurah:focus,
+.pilihAyat:focus {
+    outline: none;
+}
+
+.dropdown-item:active {
+    background-color: #8DC63F;
+    color: white;
+}
+
+.pilihTafsir {
+    border: 1px solid #8DC63F;
+    padding: 5px 14px;
+    border-radius: 4px;
+}
+
+.pilihTafsir:hover {
+    background-color: #8DC63F;
+}
+
+/* -----------------------------------------------
+   3. CHATBOT STYLES
+   ----------------------------------------------- */
+.questionArea::placeholder {
+    font-size: 12px;
+}
+
+.questionArea {
+    border: 1px solid #bbb3b3;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 10px;
+    width: 1100px;
+    height: 40px;
+    resize: none;
+    overflow: hidden;
+}
+
+.messageQuestion {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 78vh;
+}
+
+.button-kirim {
+    border: none;
+    background-color: #ffffff;
+}
+
+.button-kirim:focus {
+    outline: none;
+}
+
+.questionUser,
+.messageBot {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.questionUser {
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: black;
+    display: inline-block;
+    background-color: #d7e4be;
+}
+
+.messageBot {
+    padding: 4px 12px;
+    color: black;
+    width: 50%;
+    border-radius: 4px;
+    display: inline-block;
+    white-space: pre-line;
+}
+
+.inputanQuestion {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+/* -----------------------------------------------
+   4. DONASI STYLES
+   ----------------------------------------------- */
+.input-donasi {
+    font-size: 14px;
+}
+
+.input-donasi::placeholder {
+    font-size: 12px;
+}
+
+.btn-rekening {
+    border: transparent;
+    padding: 6px 26px;
+    border-radius: 4px;
+    color: whitesmoke;
+    background-color: #8DC63F;
+}
+
+.btn-rekening:focus {
+    outline: none;
+}
+
+.donatur::-webkit-scrollbar {
+    display: none;
+}
+
+/* -----------------------------------------------
+   5. CARD QURAN (Daftar Surah)
+   ----------------------------------------------- */
+.card-quran:hover {
+    background: linear-gradient(to right, #ffffff, #8DC63F);
+}
+
+/* -----------------------------------------------
+   6. UTILITY CLASSES
+   ----------------------------------------------- */
+body {
+    scroll-behavior: smooth;
+}
+
+.font-costum {
+    font-size: 0.8rem;
+}
+
+.font-poppins {
+    font-family: Poppins, 'sans-serif';
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+/* -----------------------------------------------
+   7. NAVIGATION & AUTH
+   ----------------------------------------------- */
+.btn:hover {
+    border: 1px solid white;
+}
+
+.donate {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+    transition: color 0.5s ease;
+}
+
+.donate:hover {
+    color: #8DC63F;
+}
+
+.login-class:hover {
+    border: 1px solid whitesmoke;
+}
+
+.login-logout:hover {
+    color: whitesmoke;
+    border: transparent;
+}
+
+.btn-reg {
+    background-color: #81C444;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 25px;
+}
+
+/* -----------------------------------------------
+   8. VIDEO SETTINGS HEADER
+   ----------------------------------------------- */
+.header-settings p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-settings {
+    overflow: auto;
+}
+
+/* -----------------------------------------------
+   9. RESPONSIVE STYLES
+   ----------------------------------------------- */
+
+/* Desktop (>= 1198px) */
+@media screen and (min-width: 1198px) {
+    .donasi {
+        margin-top: 8px;
+    }
+}
+
+/* Tablet landscape (993px - 1197px) */
+@media screen and (min-width: 993px) and (max-width: 1197px) {
+    .list {
+        margin-top: 8px;
+        margin-inline-start: 20px;
+    }
+}
+
+/* Tablet & below (<= 1200px) */
+@media screen and (max-width: 1200px) {
+    .questionArea::placeholder {
+        font-size: 10px;
+    }
+    .questionUser,
+    .messageBot {
+        font-size: 12px;
+    }
+}
+
+/* Mobile landscape & below (<= 991px) */
+@media screen and (max-width: 991px) {
+    .questionArea::placeholder {
+        font-size: 10px;
+    }
+    .questionUser,
+    .messageBot {
+        font-size: 10px;
+    }
+    .register-page {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+}
+
+/* Mobile portrait (<= 479px) */
+@media screen and (max-width: 479px) {
+    .questionArea::placeholder {
+        font-size: 8px;
+    }
+    .questionUser,
+    .messageBot {
+        font-size: 10px;
+    }
+    .donasi-layout {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .container-donasi {
+        margin-top: 20px;
+    }
+    .register-page {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+}
+
+/* -----------------------------------------------
+   10. CAROUSEL RESPONSIVE
+   ----------------------------------------------- */
+@media only screen and (min-width: 1025px) {
+    .banner {
+        margin-top: 30px;
+    }
+    .register-page {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1024px) {
+    .banner {
+        margin-top: 150px;
+    }
+    .register-page {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .banner {
+        margin-top: 40px;
+    }
+    .register-page {
+        margin-top: 50px;
+    }
+}
